@@ -1,0 +1,366 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@200;400&family=Tiro+Devanagari+Sanskrit&display=swap');
+
+:root{
+    --title-font-- :'Dancing Script', cursive;
+     
+ --main-font--:'Poppins', sans-serif;
+--sanskrit--font--:'Tiro Devanagari Sanskrit', serif;
+    
+}
+*{
+    color:white;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foot p{
+    font-family: var(--sanskrit--font--);
+}
+.blur-nav{
+    background-color: hsla(0,0%,0%,.3);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+}
+.gradient-background{
+    background: linear-gradient(300deg,hsla(0,0%,0%,.3), #0f0d0d, #080201);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+.navbar-brand{
+    color:white;
+    font-weight: bolder;
+    font-family:var(--main-font--);
+}
+.nav-link{   color:white;
+  
+    font-family: var(--main-font--);
+
+}
+.navbar-toggler{
+    color:white;
+}
+.navbar-brand:hover{
+    color:white !important;
+}
+.mynavbar a:hover{
+    text-decoration-line: underline;
+}
+.mynavbar a:active{
+    color:red;
+}
+.mainhome{
+    background-image: url('bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    position: relative;
+
+}
+.home_shadow{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    height:100vh;
+    background: linear-gradient(180deg,hsla(0,0%,0%,0)67%,hsl(0,0%,0%)98%);
+    
+}
+
+.bgcontent{
+    background-color: transparent;
+    position:absolute;
+    bottom:-32px;
+    left:70px;
+    color:white;
+   
+}
+.mainbtn{
+    background-color: hsla(0,0%,100%,.2);
+    color:white;
+    max-width: 250px;
+    padding:.75rem 1.5rem;
+    border:1px solid white;
+    margin-right: 5px;
+    transition: all .5s ease-in-out;
+}
+.mainbtn i{
+    transition: transform .4s ease;
+    
+
+}
+.mainbtn:hover i{
+    transform: translateX(9px);
+}
+.mainrow{
+    justify-content: space-around;
+}
+.maincols{
+ 
+    width:250px;
+    background-color: transparent;
+    border: none;
+   }
+   
+    
+
+/*For hovering main images */
+.maincols img{
+    
+    width:250px;
+    height: 150px;
+    display:block;
+    transition: transform .5 ease;
+    
+}
+ .maincols:hover img{
+    transform:scale(1.2);
+}
+/*------------------------About section-------------------------------------*/
+.about{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap:20px;
+    position:relative;
+    
+    
+    
+}
+
+.about .about-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.about-img{
+  width:100%; 
+   height:auto;
+    position:relative;
+  
+}
+.about-shadow{
+    position: absolute;
+    width:100%;
+    height:100%; /*100%*/
+    top:0;
+    left:0;
+   
+    background: linear-gradient(2deg,hsl(0,0%,0%)1%, hsla(0,0%,0%,0)20%, hsla(0,0%,0%,0)33%,hsl(0,0%,0%)121%);
+
+}
+
+/*------------ExploreRow-----------------------------*/
+.explorerow{
+    justify-content: center;
+}
+.excol{
+    width:300px;
+    height:300px;
+}
+.excol img{
+    width:100%;
+}
+
+/*--------------------Beauty----------------------*/
+
+.beauty{
+    position:relative;
+}
+.beauty-image{
+    position: absolute;
+    width:100%;
+    overflow:hidden;
+}
+.beauty-img{
+    width:100%;
+    height:333px;
+    object-fit:cover;
+    object-position: center;
+}
+.beauty-shadow{
+    position: absolute;
+    width:100%;
+    height:333px; /*100%*/
+    top:0;
+    left:0;
+   
+    background: linear-gradient(180deg,hsl(0,0%,0%)5%,
+    hsla(0,0%,0%,0)40%,
+    hsla(0,0%,0%,0)60%,
+    hsl(0,0%,0%)92%);
+}
+.beauty-content{
+    position:relative;
+    padding-top:16.6rem;
+    
+}
+/*--------Join Section----------------------*/
+
+.join-img{
+    width:500px;
+    height:auto;
+   
+}
+.join-content{
+    display:flex;
+    align-items: center;
+}
+#newsletter{
+    background-color: transparent;
+    border:1px solid grey;
+
+}
+.join-image{
+    position:relative;
+}
+.join-img-shadow{
+   
+        position: absolute;
+        width:100%;
+        height:100%; /*100%*/
+        top:0;
+        left:0;
+       background: linear-gradient(2deg,hsl(0,0%,0%)1%, hsla(0,0%,0%,0)20%, hsla(0,0%,0%,0)33%,hsl(0,0%,0%)121%);  
+}
+footer{
+    color:white;
+}
+    
+.foot .nav-link{
+        font-weight:lighter;
+    }
+    .foot-connect .nav-link{
+        color:#0d5efd;
+    }
+
+/*-------------------*/
+.reveal{
+    position:relative;
+    transform:translateY(150px);
+    opacity:0;
+    transition: all 1.5s ease;
+}
+.reveal-active{
+    position:relative;
+    transform:translateY(0px);
+    opacity:1;
+}
+
+/*-----------------------------------*/
+
+.revealside{
+position:relative;
+transform: translateX(-180px);
+opacity: 0;
+transition: all 2s ease;
+
+}
+
+.revealside-active{
+
+    transform:translateX(0px);
+    opacity: 1;
+
+}
+/*-----------------------------------------*/
+.revealside2{
+    position:relative;
+transform: translateX(180px);
+opacity: 0;
+transition: all 2s ease;
+}
+.revealside2-active{
+
+    transform:translateX(0px);
+    opacity: 1;
+
+}
+
+/* ======================media query=================================== */
+
+
+
+
+@media only screen and (max-width:768px){
+    .bgcontent{
+        background-color: transparent;
+        position:absolute;
+        bottom:-32px;
+        left:30px;
+        color:white;
+       
+    }
+
+}
+
+
+@media only screen and (max-width:576px){
+    .bgcontent{
+        background-color: transparent;
+        position:absolute;
+        
+        left:20px;
+        color:white;
+       
+    }
+    .home-head1{
+        font-size:16px;
+    }
+    .home-head2{
+        font-size:24px;
+    }
+    .home-p{
+        font-size:smaller;
+    }
+    .maincols{
+         display:block;
+    }
+
+    .maincols img{
+    width:150px;
+    height:auto;
+   }
+  
+
+}
+@media only screen and (max-width:340px){
+    .bgcontent{
+        position:absolute;
+        
+        left:10px;
+        color:white;
+       
+    }
+    .home-head1{
+        font-size:14px;
+    }
+    .home-head2{
+        font-size:18px;
+    }
+    .home-p{
+        font-size:smaller;
+    }
+    .maincols img{
+        width:120px;
+        height:auto;
+       }
+
+}
